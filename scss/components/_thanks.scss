@@ -1,0 +1,84 @@
+.thanks {
+  width: 100%;
+  height: 90vh;
+  @include flex-center-center;
+  flex-direction: column;
+  background-image:url('../img/fondo-electrolux-gracias.webp');	
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat; 
+
+  .container{
+    @include flex-center-center;
+    flex-direction: column;
+  }
+
+  &__text{
+    background-color: rgba(2,30,87,0.7);
+    padding: 30px 60px;
+
+    h2{
+        color: $white;
+        font-size: 25px;
+        text-align: center;
+        font-family: Segoe-Regular;
+        font-weight: bold;
+
+        @media(min-width:768px){
+            font-size: 30px;
+        }
+
+        @media(min-width:1700px){
+            font-size: 35px;
+        }
+    }
+
+    p{
+      padding-top: 15px;
+      color: $white;
+      font-family: Segoe-Regular;
+      font-size: 15px;
+      text-align: center;
+
+      @media(min-width: 1199px){
+          font-size: 18px;
+          padding-top: 20px;
+      }
+    }
+
+  }
+
+
+    &__button{
+      @include flex-center-center;
+      
+      a{
+          border: 2px solid $Meteorite;
+          margin-top: 30px;
+          background-color:$white;
+          font-family: Segoe-Bold;
+          padding: 15px 30px ;
+          color:$Meteorite;
+          font-size: 15px;
+          text-align: center;
+
+          @media(min-width:300px){
+              font-size: 16px;         
+          }
+
+          @media(min-width:768px){
+              font-size: 18px;
+              
+          }
+      }
+
+      a:hover{
+          background-color:$Meteorite ;
+          color: $white;
+          border: 2px solid $Meteorite;
+      }
+  }
+
+
+}
+

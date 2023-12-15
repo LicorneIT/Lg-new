@@ -1,0 +1,153 @@
+.the_best{
+    width: 100%;
+	position: relative;
+	height: auto;
+    padding: 30px 0 30px 0;
+    
+
+    @media(min-width:1199px){
+        padding: 60px 0 60px 0;
+    }
+
+    .container{
+        @include flex-center-center;
+        flex-direction: column;     
+        
+    }
+
+    &__title{
+        @include flex-center-center;
+        flex-direction: column;
+        padding-bottom: 30px;
+
+        h1{
+            color: $white;
+            font-size: 20px;
+            text-align: center;
+            font-family: Segoe-Bold;
+            padding-bottom: 15px;
+            
+            @media(min-width:768px){
+                font-size: 25px;
+            }
+    
+            @media(min-width:1199px){
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+            
+            @media(min-width:1700px){
+                font-size: 35px;
+            }
+        }
+
+    }
+
+    &__content{
+        width: 100%;
+        padding: 30px;
+        @include flex-center-center;
+        flex-direction: column;  
+        background-image: url('../img/banner-serv-auto.webp');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 5px;
+
+        @media(min-width:1199px){
+             padding: 60px;
+        }
+
+
+        h1.title{
+            color: $white;
+            font-size: 20px;
+            text-align: center;
+            font-family: Segoe-Bold;
+            padding-bottom: 15px;
+            
+            @media(min-width:768px){
+                font-size: 25px;
+            }
+    
+            @media(min-width:1199px){
+                font-size: 30px;
+                padding-bottom: 30px;
+            }
+            
+            @media(min-width:1700px){
+                font-size: 35px;
+            }
+        }
+
+        &__grid{
+            padding-top: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+
+            @media(min-width: 678px){
+                grid-template-columns: repeat(3, 1fr);
+                
+            }
+            
+            @media(min-width: 1199px){
+                grid-template-columns: repeat(6, 1fr);
+                
+            }
+    
+            &__item{
+                @include flex-center-center;
+                flex-direction: column;
+                gap: 15px;
+    
+                &__imagen{
+                    height: 70px;
+                    margin: auto;
+    
+                    @media(min-width: 768px){
+                        height: 91px;
+                        @include flex-center-center;
+                        margin: 0;
+                    }
+                }
+            
+                &__text{
+                    @include flex-center-center;
+                    flex-direction:column;
+                    gap: 15px;
+        
+                    h1{
+                        color: $white;
+                        font-size: 15px;
+                        text-align: center;
+                        font-family: Segoe-Bold;
+                
+                        @media(min-width:1199px){
+                            font-size: 18px;
+                        }
+        
+                    }
+    
+                    p{
+                        text-align: center;
+                        color: $white;
+                        font-size: 15px;
+                        padding: 3px;
+                        
+                
+                        @media(min-width: 1199px){
+                            font-size: 18px;
+                        }
+                    }
+        
+                    span{
+                        font-family: Segoe-Bold;
+                    }
+                }
+            }
+        }
+
+    }
+    
+}
